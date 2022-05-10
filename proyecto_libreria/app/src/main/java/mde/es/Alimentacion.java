@@ -3,7 +3,7 @@ package mde.es;
 public class Alimentacion extends Producto {
 
 	private boolean refrigerado;
-	
+
 	public boolean isRefrigerado() {
 		return refrigerado;
 	}
@@ -12,16 +12,18 @@ public class Alimentacion extends Producto {
 		this.refrigerado = refrigerado;
 	}
 
-	public Alimentacion() {};
+	public Alimentacion() {
+	};
 
 	public Alimentacion(String nombre, String codigo, boolean refrigerado) {
 		super(nombre, codigo);
 		this.refrigerado = refrigerado;
 	}
+
 	
 	@Override
 	public String toString() {
-		return "Alimento: " + isRefrigerado() + ", me llamo " + getNombre();
+		return "[" + getCodigo() + "]" + "Alimento: " + getNombre() + " refrigerado [" + isRefrigerado() + "]";
 	}
 
 }

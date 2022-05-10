@@ -22,7 +22,7 @@ public class Menaje extends Producto {
 	
 	@Override
 	public String toString() {
-		return "Alimento: " + getNombre() + " y codigo " + getNif();
+		return "[" + getCodigo() + "]" + "Menaje: " + getNombre() +" refrigerado [" + isReciclable() + "]";
 	}
 
 }

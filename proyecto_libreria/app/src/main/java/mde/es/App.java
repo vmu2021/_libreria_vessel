@@ -10,5 +10,9 @@ public class App {
 
     public static void main(String[] args) {
         System.out.println(new App().getGreeting());
+        
+    Alimentacion alimentoAlimentac = new Alimentacion("asdasd","23434234",true);
+    System.out.println(alimentoAlimentac);
+    
     }
 }
